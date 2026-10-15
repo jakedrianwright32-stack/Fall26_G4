@@ -1,102 +1,98 @@
-# Fall26_G4
+# Fall26_G4 — CSCI 4221 Final Grade Calculator
 
-## Members
+## Team Members
 
-1. Jalen Davis
+1. **Jalen Davis** — Developer / Testing
+2. **Malachi Johnson** — Developer / Testing
+3. **Jakedrian Wright** — Developer / Testing
 
-2. Malachi Johnson
+## 1. Product Overview
 
-## Part 1 - work done by each member
-### 1. Jalen Davis
-#### Product vision statement
+The Final Grade Calculator is a simple application designed to help students calculate their final course grade based on assignment, quiz, exam, and final exam grades. The application aims to provide an easy-to-use tool that allows students to understand their current or expected course grade.
 
-    CSCI4221 Final Grade Calculator
-    Project Overview
-    The Final Grade Calculator is a simple application designed to help students calculate their final course grade based on their individual assignment, quiz, exam, and final exam grades. The goal of the project is to create an easy-to-use tool that allows students to quickly understand their current or expected course grade.
+### Product Vision Statement
 
-    Product Vision
-    Our vision is to create a simple and user-friendly final grade calculator that helps students quickly determine their course grade and understand what grade they may need on their final exam to reach their desired final grade.
+Our vision is to create a simple and user-friendly final grade calculator that helps students quickly determine their course grade and understand what grade they may need on their final exam to reach their desired final grade.
 
-#### Role and self introduction
+## 2. Individual Contributions
 
-    Team Members
-    Jalen Davis
-    Role: Developer / Testing
+### Jalen Davis
 
-    I am a Computer Science student at Albany State University with an interest in cybersecurity. My responsibilities include helping develop the grade calculator, implementing and testing the calculation logic, troubleshooting issues, and contributing to project documentation.
+**Role:** Developer / Testing
 
-    Malachi Johnson
-    Role: Developer / Testing
+Jalen is a Computer Science student at Albany State University with an interest in cybersecurity. His responsibilities include helping develop the grade calculator, implementing and testing calculation logic, troubleshooting issues, and contributing to project documentation.
 
-    Malachi Johnson is a member of the development team. His responsibilities include helping develop the application, testing its functionality, troubleshooting problems, and contributing to project planning and documentation.
+### Malachi Johnson
 
-    Project Features
-    Calculate a student's final course grade
-    Accept grades for different course categories
-    Apply percentage weights to different categories
-    Display the student's final numerical grade
-    Display the corresponding letter grade
-    Provide an easy-to-use interface
-    Help students determine the grade needed on a final exam
+**Role:** Developer / Testing
 
-#### Minutes
-    
-    Meeting Schedule
-    Our team will meet every Monday and Wednesday throughout the semester to discuss project progress, assign tasks, test the application, and plan upcoming work.
+Malachi is a member of the development team. His responsibilities include helping develop the application, testing its functionality, troubleshooting problems, and contributing to project planning and documentation.
 
-    Technologies
-    Java
-    Git
-    GitHub
-    Visual Studio Code
+### Jakedrian Wright
 
-    Project Goals
-    Our main goal is to create a functional and easy-to-use grade calculator while gaining experience with software development, GitHub, version control, teamwork, testing, and project documentation.
+**Role:** Developer / Testing
 
+Jakedrian Wright is a member of the development team. His responsibilities include helping develop the final grade calculator, testing the application's functionality and calculation accuracy, troubleshooting issues, and contributing to project planning and documentation.
 
-### 2. Malachi Johnson
-#### Product vision statement
+## 3. Project Features
 
-    CSCI4221 Final Grade Calculator
-    Project Overview
-    The Final Grade Calculator is a simple application designed to help students calculate their final course grade based on their individual assignment, quiz, exam, and final exam grades. The goal of the project is to create an easy-to-use tool that allows students to quickly understand their current or expected course grade.
+* Calculate a student's final course grade.
+* Accept grades for different course categories.
+* Apply percentage weights to different categories.
+* Display the student's final numerical grade.
+* Display the corresponding letter grade.
+* Provide an easy-to-use interface.
+* Help students determine the grade needed on a final exam.
 
-    Product Vision
-    Our vision is to create a simple and user-friendly final grade calculator that helps students quickly determine their course grade and understand what grade they may need on their final exam to reach their desired final grade.
+## 4. Meeting Minutes
 
-#### Role and self introduction
+### Meeting Schedule
 
-    Team Members
-    Jalen Davis
-    Role: Developer / Testing
+Our team plans to meet every Monday and Wednesday throughout the semester to discuss project progress, assign tasks, test the application, and plan upcoming work.
 
-    I am a Computer Science student at Albany State University with an interest in cybersecurity. My responsibilities include helping develop the grade calculator, implementing and testing the calculation logic, troubleshooting issues, and contributing to project documentation.
+### Meeting 1 — [Insert Date]
 
-    Malachi Johnson
-    Role: Developer / Testing
+**Attendees:** Jalen Davis, Malachi Johnson, and Jakedrian Wright
 
-    Malachi Johnson is a member of the development team. His responsibilities include helping develop the application, testing its functionality, troubleshooting problems, and contributing to project planning and documentation.
+**Discussion Topics:**
 
-    Project Features
-    Calculate a student's final course grade
-    Accept grades for different course categories
-    Apply percentage weights to different categories
-    Display the student's final numerical grade
-    Display the corresponding letter grade
-    Provide an easy-to-use interface
-    Help students determine the grade needed on a final exam
+* Review the project requirements.
+* Discuss the product vision and project goals.
+* Identify the application's main features.
+* Discuss team responsibilities and development tasks.
 
-#### Minutes
-    
-    Meeting Schedule
-    Our team will meet every Monday and Wednesday throughout the semester to discuss project progress, assign tasks, test the application, and plan upcoming work.
+**Decisions Made:**
 
-    Technologies
-    Java
-    Git
-    GitHub
-    Visual Studio Code
+* Develop a final grade calculator.
+* Focus on usability and accurate grade calculations.
+* Share development and testing responsibilities.
 
-    Project Goals
-    Our main goal is to create a functional and easy-to-use grade calculator while gaining experience with software development, GitHub, version control, teamwork, testing, and project documentation.
+**Action Items:**
+
+* Establish the initial project structure.
+* Plan the grade calculation logic.
+* Begin development and testing.
+
+*Note: Update these minutes to reflect what the team actually discussed and decided.*
+
+## 5. Technologies
+
+* Java
+* Git
+* GitHub
+* Visual Studio Code
+
+## 6. Project Goals
+
+Our main goal is to create a functional and easy-to-use grade calculator while gaining experience with software development, GitHub, version control, teamwork, testing, and project documentation.
+
+## 7. Future Improvements
+
+Potential improvements include:
+
+* Allowing students to enter their course grading weights.
+* Calculating the score needed on a final exam to achieve a target grade.
+* Improving the user interface.
+* Testing different grading scenarios to ensure accurate results.
+
 
