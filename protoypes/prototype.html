@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Grade Calculator Prototype</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      margin: 0;
+      padding: 30px;
+      color: #1e293b;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px #0001;
+    }
+    h1 { text-align: center; color: #1d4ed8; }
+    p { text-align: center; color: #475569; }
+    label { display: block; margin-top: 16px; font-weight: bold; }
+    input {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 14px;
+      background: #eff6ff;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Final Grade Calculator</h1>
+    <p>Enter your grades to estimate your course average.</p>
+
+    <label for="course">Course Name</label>
+    <input id="course" placeholder="e.g. CSCI 4221">
+
+    <label for="assignments">Assignment Average (%)</label>
+    <input id="assignments" type="number" min="0" max="100" placeholder="85">
+
+    <label for="quizzes">Quiz Average (%)</label>
+    <input id="quizzes" type="number" min="0" max="100" placeholder="90">
+
+    <label for="exams">Exam Average (%)</label>
+    <input id="exams" type="number" min="0" max="100" placeholder="80">
+
+    <label for="finalWeight">Final Exam Weight (%)</label>
+    <input id="finalWeight" type="number" min="0" max="100" placeholder="25">
+
+    <label for="finalGrade">Final Exam Grade (%)</label>
+    <input id="finalGrade" type="number" min="0" max="100" placeholder="Enter score">
+
+    <button onclick="calculateGrade()">Calculate Grade</button>
+    <div id="result" aria-live="polite">Your result will appear here.</div>
+  </main>
+
+  <script>
+    function calculateGrade() {
+      const fields = ["assignments", "quizzes", "exams", "finalWeight", "finalGrade"];
+      const values = {};
+
+      for (const id of fields) {
+        const field = document.getElementById(id);
+        const value = field.value.trim();
+        if (value === "" || !Number.isFinite(Number(value)) ||
+            Number(value) < 0 || Number(value) > 100) {
+          document.getElementById("result").textContent =
+            "Please enter a valid number from 0 to 100 in every grade field.";
+          field.focus();
+          return;
+        }
+        values[id] = Number(value);
+      }
+
+      const courseworkWeight = 100 - values.finalWeight;
+      const courseworkAverage =
+        (values.assignments + values.quizzes + values.exams) / 3;
+
+      const finalAverage =
+        courseworkAverage * courseworkWeight / 100 +
+        values.finalGrade * values.finalWeight / 100;
+
+      document.getElementById("result").textContent =
+        "Estimated course grade: " + finalAverage.toFixed(2) + "%";
+    }
+  </script>
+</body>
+</html>
